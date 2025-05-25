@@ -1,28 +1,27 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <title>花札 Hanafuda</title>
-    <link rel="stylesheet" href="styles/style.css">
-    <style>
-        canvas {
-            background-color: #2e2e2e;
-            display: block;
-            margin: 0 auto;
-            border: 2px solid white;
-        }
-    </style>
-</head>
-<body>
-    <canvas id="gameCanvas" width="1200" height="675"></canvas>
+/**
+ * @title 花札Hanafuda
+ * @language 繁體中文, 日本語
+ */
 
-    <!-- 遊戲腳本順序非常重要，global 要先載入 -->
-    <script src="scripts/global.js"></script>
-    <script src="scripts/function.js"></script>
-    <script src="scripts/class.js"></script>
-    <script src="scripts/AI.js"></script>
-    <script src="scripts/MCTS.js"></script>
-    <script src="scripts/UI.js"></script>
-    <script src="scripts/main.js"></script>
-</body>
-</html>
+html {
+    font-family: 'Yuji Syuku', 'Microsoft YaHei', sans-serif;
+    font-size: 20px;
+}
+
+body {
+	background:#1e1e1e;
+    width: 100dvw;
+    height: 100dvh;
+	margin: 0;
+	padding: 0;
+}
+
+canvas {
+    padding: 0;
+    margin: auto;
+    display: block;
+    background: url('../imgs/bg.webp'), rgb(144,128,96);
+    background-size: 5%;
+	background-repeat: repeat;
+    border-radius: 5px;
+}
