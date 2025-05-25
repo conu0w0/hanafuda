@@ -63,10 +63,6 @@ function create_UI() {
 
     back_button = new Button(SCREEN_W/2-w/2, SCREEN_H/2+(h+10)*4, w, h, 0, '戻る', 40, back_to_title, '', '', 'black');
 
-    /* 開發者 */
-    w = FONT_SIZE*6, h = FONT_SIZE * 2;
-    devSource = new Button(SCREEN_W - w, SCREEN_H - h, w, h, 0, '©C-W-Z', FONT_SIZE, ()=>{window.open('https://github.com/C-W-Z/hanafuda/','blank');}, '', '', 'black');
-
     /* settings */
     w = 500, h = 450;
     setting_panel = new Button(SCREEN_W/2-w/2, SCREEN_H/2-h/2, w, h, 10);
