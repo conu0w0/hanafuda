@@ -7,6 +7,25 @@
  * @copyright © 2023 C-W-Z
  */
 
+/* --- 音效 --- */
+const bgm = new Audio('sounds/bgm.mp3');
+const seClick = new Audio('sounds/click.wav');
+const seMatch = new Audio('sounds/match.wav');
+
+bgm.loop = true;
+bgm.volume = 0.5;
+seClick.volume = 1.0;
+seMatch.volume = 1.0;
+
+let audioInitialized = false;
+
+function initAudio() {
+    if (!audioInitialized) {
+        bgm.play().catch(err => console.log("BGM 無法自動播放，需點擊啟動"));
+        audioInitialized = true;
+    }
+}
+
 /* constants */
 const SCREEN_W = 1200;
 const SCREEN_H = 675;
